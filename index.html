@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 26 - Grid Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="photo-video-solid.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<body>
+    <h1 class="headline"> Travel </h1>
+    <span class="border"> </span>
+    <div class="photo-container">
+        
+        <div class="box box-1">
+            <a href="1.jpg">
+            <img class="bg" src="1.jpg">
+            <div class="content">
+                 <img src="user1.jpg">
+                <p class="author"> Alex </p>
+            </div>
+        </a>
+        </div>
+        
+        <div class="box box-2">
+           <a href="2.jpg"><img class="bg" src="2.jpg"></a> 
+            <div class="content">
+                <img src="user1.jpg">
+               <p class="author"> Alex </p>
+           </div>
+            
+        </div>
+        <div class="box box-3">
+           <a href="3.jpg"> <img class="bg" src="3.jpg"></a>
+            <div class="content">
+                <img src="user2.jpg">
+               <p class="author"> Dr Bark </p>
+           </div>
+            
+        </div>
+        <div class="box box-4">
+            <a href="4.jpg"><img class="bg" src="4.jpg"></a>
+            <div class="content">
+                <img src="user1.jpg">
+               <p class="author"> Alex </p>
+           </div>
+            
+        </div>
+        <div class="box box-5">
+           <a href="5.jpg"><img class="bg" src="5.jpg"></a> 
+            <div class="content">
+                <img src="user3.jpg">
+               <p class="author"> Alice </p>
+           </div>
+            
+        </div>
+        <div class="box box-6">
+            <a href="6.jpg"><img class="bg" src="6.jpg"></a>
+            <div class="content">
+                <img src="user3.jpg">
+               <p class="author"> Alice </p>
+           </div>
+            
+        </div>
+        <div class="box box-7">
+            <a href="7.jpg"><img class="bg" src="7.jpg"></a>
+            <div class="content">
+                <img src="user2.jpg">
+               <p class="author"> Dr Bark </p>
+           </div>
+        
+            
+        </div>
+        <div class="box box-8">
+            <a href="8.jpg"><img class="bg" src="8.jpg"></a>
+            <div class="content">
+                <img src="user4.jpg">
+               <p class="author"> Ladies </p>
+           </div>
+            
+        </div>
+
+    </div>
+    <script>
+        $(".box").magnificPopup({
+  delegate: 'a', 
+  type: 'image',
+  gallery:{ 
+      enabled:true
+  }
+ 
+});
+    </script>
+    
+</body>
+</html>
